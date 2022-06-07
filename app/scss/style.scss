@@ -3,7 +3,48 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  &__content{
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__inner{
+    display: flex;
+    align-items: center;
+  }
+  &__phone{
+    @extend %montserrat-700;
+    font-size: 12px;
+    line-height: 15px;
+    color: $accent;
+    margin-right: 90px;
+  }
+  &__cart{
+    margin-right: 24px;
+  }
+}
 
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__item + .menu__item{
+    margin-left: 50px;
+  }
+  &__item-link{
+    color: $accent;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 2px 1px;
+    transition: all .3s;
+    &:hover{
+      border-bottom: 1px solid $accent;
+      color: $default;
+    }
+  }
+}
 
 
 
