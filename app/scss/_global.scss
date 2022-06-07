@@ -1,5 +1,23 @@
-
+html,
+body{
+  height: 100%;
+}
 
 body{
+  @extend %montserrat-400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $default;
+  display: flex;
+  flex-direction: column;
+}
 
+.main {
+  flex-grow: 1;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 0 25px;
+  margin: 0 auto;
 }

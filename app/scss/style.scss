@@ -3,9 +3,139 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  &__content{
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__inner{
+    display: flex;
+    align-items: center;
+  }
+  &__phone{
+    @extend %montserrat-700;
+    font-size: 12px;
+    line-height: 15px;
+    color: $accent;
+    margin-right: 90px;
+  }
+  &__cart{
+    margin-right: 24px;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__item + .menu__item{
+    margin-left: 50px;
+  }
+  &__item-link{
+    color: $accent;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 2px 1px;
+    transition: all .3s;
+    &:hover{
+      border-bottom: 1px solid $accent;
+      color: $default;
+    }
+  }
+}
+
+.top{
+  padding: 147px 0;
+  min-height: calc(100vh - 88px);
+  &__container{
+    max-width: 1410px;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{
+    margin-left: 105px;
+  }
+  &__title{
+    @extend %montserrat-700;
+    font-size: 48px;
+    line-height: 72px;
+    color: $accent;
+    max-width: 520px;
+  }
+  &__title-span{
+    color: #E4BABD;
+  }
+  &__text{
+    @extend %montserrat-500;
+    line-height: 27px;
+    margin-top: 24px;
+    max-width: 500px;
+  }
+  &__link{
+    display: inline-block;
+    margin-top: 70px;
+    padding: 18px 52px;
+    color: #fff;
+    background: linear-gradient(94.89deg, #E4BABD -0.87%, #C89DA0 123.92%);
+    border-radius: 10px;
+  }
+  &__img{
+    max-width: 680px;
+  }
+}
 
 
 
 
+
+.footer{
+  background: #606060;
+  &__content{
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__menu-list{
+    display: flex;
+  }
+  &__contacts{
+    display: flex;
+    align-items: center;
+  }
+  &__menu-item + .footer__menu-item{
+    margin-left: 50px;
+  }
+  &__menu-link{
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    transition: all .3s;
+    &:hover{
+      border-bottom: 1px solid #fff;
+    }
+  }
+  &__btn,
+  &__phone{
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+  }
+  &__btn{
+    @extend %montserrat-400;
+    padding: 6px 12px;
+    border: 1px solid #fff;
+    margin-right: 30px;
+  }
+  &__phone {
+    @extend %montserrat-700;
+  }
+  
+}
 
 @import 'media';
