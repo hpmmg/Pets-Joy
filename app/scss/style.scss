@@ -46,6 +46,48 @@
   }
 }
 
+.top{
+  padding: 147px 0;
+  &__container{
+    max-width: 1410px;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content{
+    margin-left: 105px;
+  }
+  &__title{
+    @extend %montserrat-700;
+    font-size: 48px;
+    line-height: 72px;
+    color: $accent;
+    max-width: 520px;
+  }
+  &__title-span{
+    color: #E4BABD;
+  }
+  &__text{
+    @extend %montserrat-500;
+    line-height: 27px;
+    margin-top: 24px;
+    max-width: 500px;
+  }
+  &__link{
+    display: inline-block;
+    margin-top: 70px;
+    padding: 18px 52px;
+    color: #fff;
+    background: linear-gradient(94.89deg, #E4BABD -0.87%, #C89DA0 123.92%);
+    border-radius: 10px;
+  }
+  &__img{
+    max-width: 680px;
+  }
+}
+
 
 
 
