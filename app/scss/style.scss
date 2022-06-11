@@ -100,12 +100,6 @@
     align-items: center;
     margin-right: 160px;
   }
-  &__title{
-    @extend %montserrat-700;
-    font-size: 24px;
-    line-height: 29px;
-    color: $accent;
-  }
   &__title-btn{
     border: none;
     background: transparent;
@@ -193,6 +187,42 @@
   color: #C89DA0;
 }
 
+.catalog{
+  padding-bottom: 80px;
+  &__heading{
+    display: flex;
+    align-items: center;
+  }
+  &__title-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+
+.stat{
+  padding-bottom: 80px;
+  &__list.stat__list{
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+  }
+  &__list-item{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  &__list-item + .stat__list-item{
+    margin-left: 38px;
+  }
+  &__list-item-num{
+    @extend %montserrat-900;
+    font-size: 36px;
+    line-height: 44px;
+    margin-right: 21px;
+  }
+}
 
 
 .footer{
