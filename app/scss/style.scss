@@ -46,6 +46,54 @@
   }
 }
 
+.burger-menu {
+  cursor: pointer;
+  padding-left: 1.25em;
+  position: relative;
+  width: 30px;
+  height: 25px;
+  display: none;
+}
+
+.burger-menu-global {
+  backface-visibility: hidden;
+  position: absolute;
+  left: 0;
+  border-top: 3px solid black;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.burger-menu-top {
+  top: 0;
+}
+
+.burger-menu-middle {
+  top: 10px;
+}
+
+.burger-menu-bottom {
+  top: 20px;
+}
+
+.burger-menu-top-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(50deg);
+  transition: 0.3s 0.3s;
+}
+
+.burger-menu-middle-click {
+  opacity: 0;
+}
+
+.burger-menu-bottom-click {
+  backface-visibility: hidden;
+  top: 15px;
+  transform: rotate(-410deg);
+  transition: 0.3s 0.3s;
+}
+
 .top{
   padding: 147px 0;
   min-height: calc(100vh - 88px);
@@ -59,6 +107,7 @@
   }
   &__content{
     margin-left: 105px;
+    margin-right: 40px;
   }
   &__title{
     @extend %montserrat-700;
